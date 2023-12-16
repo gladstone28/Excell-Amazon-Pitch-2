@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+* {
+    /* Remaining global styles unchanged */
+}
+
+
+/* Other styles remain the same */
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    /* Adjust spacing between logo and menu */
+}
+
+.navbar .logo img {
+    max-height: 40px;
+    /* Adjust the max height of the logo */
+    width: auto;
+    /* Maintain aspect ratio */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    /* Aligns the menu items with the logo */
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    .navbar .logo img {
+        max-height: 35px;
+        /* Slightly smaller logo for smaller screens */
+    }
+    .navbar .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navbar .logo,
+    .navbar ul {
+        flex-basis: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Additional media query for very small screens */
+
+@media (max-width: 480px) {
+    .navbar .logo img {
+        max-height: 30px;
+        /* Even smaller logo for very small screens */
+    }
+}
+
+
+/* Other responsive styles remain the same */
